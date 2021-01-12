@@ -23,6 +23,15 @@ const Listings = db.define('listings', {
     type: Sequelize.STRING,
     allowNull: false
   },
+  price: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
+  sellerName: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    defaultValue: 'eBooks'
+  },
   image: {
     type: Sequelize.TEXT,
     allowNull: false,
